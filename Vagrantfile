@@ -73,7 +73,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: "systemctl restart xdm.service"
   config.vm.provision "shell", path: "scripts/30_setupJava.sh"
   config.vm.provision "shell", path: "scripts/40_setupEclipse.sh"
-  config.vm.provision "shell", path: "scripts/50_setupMiniconda.sh", privileged: false
-  config.vm.provision "shell", path: "scripts/60_setup_spark.sh"
+  #config.vm.provision "shell", path: "scripts/50_setupMiniconda.sh", privileged: false
+  #config.vm.provision "shell", path: "scripts/60_setup_spark.sh"
+  config.vm.provision "shell", path: "scripts/70_setup_SRLab.sh"
 
 end
