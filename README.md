@@ -10,8 +10,8 @@ This is a vagrant project to build and spin up a VM with the following: -
 * XFCE4 desktop
 * Apache Spark (2.1.1)
 * Eclipse Oxygen with: -
-    - Scala IDE
     - Java IDE
+    - Maven support
     - pydev
     - Eclipse colour theme plugin
 * Firefox
@@ -21,8 +21,8 @@ This is a vagrant project to build and spin up a VM with the following: -
 
 1. [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 2. [Download and install Vagrant](http://www.vagrantup.com/downloads.html).
-3. Go to [releases](https://github.com/martinprobson/vagrant-dev-machine/releases) and download and extract the latest source of this project.
-5. In your terminal change your directory into the project directory (i.e. `cd dev-machine` )
+3. [Clone the repository](https://github.com/sr-lab/vagrant-dev-machine) 
+5. In your terminal change your directory into the project directory (i.e. `cd vagrant-dev-machine` )
 6. Run ```vagrant up``` to create the VM.
 7. Execute ```vagrant ssh``` to login to the VM or login to XFCE via virtualbox.
 
@@ -72,5 +72,7 @@ A nicer version of vim is also installed, use :PluginInstall to install the plug
 2. Java heapsize in Eclipse needs to be adjusted to run Scala IDE - Eclipse shows you how to do this on first startup.
 
 # Credits
+
+This repository is a fork of [Martin Robson's vagrant-dev-machine](https://github.com/martinprobson/vagrant-dev-machine).
 
 Thanks to [Budhaditya](https://github.com/budhash) for the [silent eclipse](https://github.com/budhash/install-eclipse) install script.
